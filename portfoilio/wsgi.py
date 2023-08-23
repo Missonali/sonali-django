@@ -11,7 +11,7 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'viamldjango.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'portfoilio.settings')
 
 application = get_wsgi_application()
 
