@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-4y$^h3+jxmz+rto*1op48)j!x=4&+q4y1c*v@xv(4!q0@=+li2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['django-sonali.ermks.in', '.vercel.app']
+ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app']
 
 
 # Application definition
@@ -82,6 +82,22 @@ WSGI_APPLICATION = 'portfoilio.wsgi.application'
 #         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
+
+DATABASES = {
+    'default':
+    {
+        'ENGINE': 'djongo',
+        'NAME': 'dboncloud',
+        'ENFORCE_SCHEMA': True,
+        'CLIENT':
+        {'host': 'mongodb+srv://sonali2000:Sonali1999@clusterfortest.zilcack.mongodb.net/?retryWrites=true&w=majority',
+         'username': 'sonali2000',
+         'password': 'Sonali1999',
+         'authMechanism': 'SCRAM-SHA-1',
+         }
+    }
+}
+
 
 
 # Password validation
